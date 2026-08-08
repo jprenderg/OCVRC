@@ -159,5 +159,7 @@ def name(df_source):
             "DEFAULT_NAME"
         ]
     )
+    
+    df_names["NAME"] = df_names["NAME"].str.replace(r"^V\* ", "", regex=True)
 
     return df_names

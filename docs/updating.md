@@ -1,8 +1,8 @@
 # Updating the Catalog
 
-This page describes how to use the OCVC VLASS/RACS Catalog Update Utility to add a new source and its associated measurements to the catalog.
+This page describes how to use the OCVC VLASS/RACS Catalog Update Utility to create a new source and its associated measurements to the catalog.
 
-The update utility **never modifies the master database**. Instead, all new records are appended to an output database. The catalog maintainer periodically reviews submitted updates and merges accepted records into the master catalog.
+The update utility **never modifies the master database**. Instead, all new records are written to an output database. Users should contact the authors if they wish to contribute to the master database or have questions about the database.
 
 ---
 
@@ -71,7 +71,7 @@ The program automatically:
 - Creates records in `Period_Table`
 - Creates records in `Summary_Table`
 
-The output database contains only the newly added records and is written to:
+The output database contains only the newly created record and is written to:
 
 ```text
 output/VLASS_RACS_Updated.db
@@ -83,7 +83,7 @@ The master database is **never modified**.
 
 ## Output
 
-After the program finishes, the update database is located at:
+After the program finishes, the ouptut database is located at:
 
 ```text
 output/VLASS_RACS_Updated.db

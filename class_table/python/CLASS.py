@@ -141,5 +141,8 @@ def source_class(source_id, ra, dec):
         )
         .reset_index(drop=True)
     )
+    
+    df_out["CLASS"] = df_out["CLASS"].replace("CV*", "CV")
+    df_out["CLASS"] = df_out["CLASS"].replace("*", "star")
 
     return df_out

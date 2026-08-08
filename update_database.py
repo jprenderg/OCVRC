@@ -33,8 +33,8 @@ from class_table.python.CLASS import source_class
 # ------------------------------------------------------------
 
 # AR Sco
-ra = 245.4470133276900
-dec = -22.8862182469700
+ra = 304.39133
+dec = -3.66411
 
 # Random
 # ra = 245.

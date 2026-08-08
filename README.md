@@ -1,4 +1,4 @@
-# OCVC VLASS/RACS Catalog
+# Open Cataclysmisic Variable Radio Catalog (OCVRC)
 
 The **Open Cataclysmic Variable Radio Vatalog (OCVRC)** is a database of radio observations of known and candidate cataclysmic variables (CVs). It combines measurements from the **Very Large Array Sky Survey (VLASS)** and the **Rapid ASKAP Continuum Survey (RACS)** together with supplementary measurements from major optical, infrared, ultraviolet, X-ray, and astrometric surveys.
 
@@ -6,7 +6,7 @@ This repository contains:
 
 - The OCVRC master database.
 - A CSV version of a Source Summary Table.
-- Python software for adding new sources to the catalog.
+- Python software for creating new source entries.
 - Documentation describing the catalog and its database schema.
 
 ---
@@ -22,7 +22,7 @@ The documentation includes:
 - Catalog overview
 - Database field definitions
 - Download instructions
-- Catalog update instructions
+- Instructions for creating new source entries
 
 ---
 
@@ -39,9 +39,11 @@ See the **Downloads** page in the documentation for the latest files.
 
 ## Updating the Catalog
 
-The repository includes a Python utility for adding new sources and their associated measurements to the catalog.
+The repository includes a Python utility for creating new sources and their associated measurements.
 
-The update utility never modifies the master database. Instead, new records are written to an output database for review by the catalog maintainer.
+The master database itself is maintained separately and cannot be updated directly by users.
+
+Users should contact the authors if they wish to contribute to the database or have questions about the database.
 
 Complete instructions are provided in the **Updating the Catalog** section of the documentation.
 
