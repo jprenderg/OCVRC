@@ -29,8 +29,8 @@ db_path = OUTPUT_DB
 # Read from master database
 # db_path = MASTER_DB
 
-ra_in = 304.39133
-dec_in = -3.66411
+ra = 304.39133
+dec = -3.66411
 
 search_radius_arcsec = 300.0
 
@@ -70,8 +70,8 @@ if df_source_all.empty:
     raise ValueError("source_table contains no sources with valid coordinates.")
 
 target = SkyCoord(
-    ra=ra_in * u.deg,
-    dec=dec_in * u.deg,
+    ra=ra * u.deg,
+    dec=dec * u.deg,
     frame="icrs"
 )
 
