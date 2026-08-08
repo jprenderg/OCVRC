@@ -15,7 +15,7 @@ This repository contains:
 
 Complete documentation is provided in the docs/ directory and is published through the GitHub Pages site:
 
-**https://jprenderg.github.io/OcvcVlassRacs/**
+**https://jprenderg.github.io/OCVRC/**
 
 The documentation includes:
 

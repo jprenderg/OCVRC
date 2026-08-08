@@ -88,7 +88,7 @@ After the program finishes, the ouptut database is located at:
 ```text
 output/VLASS_RACS_Updated.db
 ```
-This database contains only the newly added records and their associated measurements.
+This database contains only the newly added record and its associated measurements.
 
 The update Source Summary Table CSV file is located at:
 
@@ -111,10 +111,4 @@ The cache may be deleted at any time. Files will be downloaded again automatical
 
 ---
 
-## Submitting Updates
 
-After verifying the new entries, upload `VLASS_RACS_Update.db` to a file-sharing service such as OneDrive or Google Drive.
-
-Email the download link to:
-
-**jprenderg@outlook.com**

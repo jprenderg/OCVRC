@@ -31,7 +31,7 @@ This file contains one row for each primary catalog source and is intended for u
 
 ## Documentation
 
-Complete documentation, including descriptions of all database fields, download instructions, and catalog update procedures, is available through the project's GitHub Pages documentation site.
+Complete documentation, including descriptions of all database fields, download instructions, and update procedures, is available through the project's GitHub Pages documentation site.
 
 ---
 
