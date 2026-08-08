@@ -1,6 +1,6 @@
-# OCVC VLASS/RACS Catalog
+# Open Cataclysmic Variable Radio Catalog (OCVRC)
 
-Welcome to the documentation for the **Open Cataclysmic Variable Catalog (OCVC) VLASS/RACS Catalog**.
+Welcome to the documentation for the **Open Cataclysmic Variable Radio Catalog (OCVRC)**.
 
 The OCVRC provides radio observations of known and candidate cataclysmic variables by combining measurements from the **Very Large Array Sky Survey (VLASS)** and the **Rapid ASKAP Continuum Survey (RACS)**. It also includes supplementary information from major optical, infrared, ultraviolet, X-ray, and astrometric surveys.
 

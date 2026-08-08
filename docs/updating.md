@@ -1,6 +1,6 @@
 # Updating the Catalog
 
-This page describes how to use the OCVC VLASS/RACS Catalog Update Utility to create a new source and its associated measurements to the catalog.
+This page describes how to use the Open Cataclysmic Variable Radio Catalog (OCVRC) Update Utility to create a new source and its associated measurements to the catalog.
 
 The update utility **never modifies the master database**. Instead, all new records are written to an output database. Users should contact the authors if they wish to contribute to the master database or have questions about the database.
 
