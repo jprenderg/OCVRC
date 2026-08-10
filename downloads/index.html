@@ -14,7 +14,7 @@
         <link rel="prev" href="../fields/">
       
       
-        <link rel="next" href="../updating/">
+        <link rel="next" href="../build/">
       
       
         
@@ -324,10 +324,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ocvcvlassracssqlite" class="md-nav__link">
+  <a href="#ocvrc_builddb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        OcvcVlassRacs.sqlite
+        OCVRC_Build.db
       
     </span>
   </a>
@@ -335,10 +335,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary_tablecsv" class="md-nav__link">
+  <a href="#summary_table_buildcsv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary_Table.csv
+        Summary_Table_Build.csv
       
     </span>
   </a>
@@ -398,14 +398,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../updating/" class="md-nav__link">
+      <a href="../build/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Updating the Catalog
+    Building a User Catalog
   
 
     
@@ -457,10 +457,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ocvcvlassracssqlite" class="md-nav__link">
+  <a href="#ocvrc_builddb" class="md-nav__link">
     <span class="md-ellipsis">
       
-        OcvcVlassRacs.sqlite
+        OCVRC_Build.db
       
     </span>
   </a>
@@ -468,10 +468,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary_tablecsv" class="md-nav__link">
+  <a href="#summary_table_buildcsv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary_Table.csv
+        Summary_Table_Build.csv
       
     </span>
   </a>
@@ -536,7 +536,7 @@
 <h1 id="downloads">Downloads</h1>
 <p>This directory contains the primary data products for the <strong>OCVRC</strong>.</p>
 <h2 id="files">Files</h2>
-<h3 id="ocvcvlassracssqlite"><code>OcvcVlassRacs.sqlite</code></h3>
+<h3 id="ocvrc_builddb"><code>OCVRC_Build.db</code></h3>
 <p>The complete SQLite database containing the following tables:</p>
 <ul>
 <li><code>Source_Table</code></li>
@@ -548,12 +548,13 @@
 <p>The tables are linked through the <code>SOURCE_ID</code> field.</p>
 <p>This file is recommended for users who wish to perform SQL queries or make use of the complete relational database.</p>
 <hr />
-<h3 id="summary_tablecsv"><code>Summary_Table.csv</code></h3>
+<h3 id="summary_table_buildcsv"><code>Summary_Table_Build.csv</code></h3>
 <p>A CSV version of the <code>Source Summary Table</code>.</p>
-<p>This file contains one row for each primary catalog source and is intended for users who require only the primary source catalog without the complete relational database.</p>
+<p>This file contains one row for each primary catalog source (i.e., radio-loud neighbors are excluded) and is intended for users who require only the primary source catalog without the complete relational database.</p>
 <hr />
 <h2 id="documentation">Documentation</h2>
-<p>Complete documentation, including descriptions of all database fields, download instructions, and update procedures, is available through the project's GitHub Pages documentation site.</p>
+<p>Complete documentation, including descriptions of all database fields, download instructions, and update procedures, is available through the project's GitHub Pages documentation site:</p>
+<p><code>https://jprenderg.github.io/OCVRC/</code></p>
 <hr />
 <h2 id="version">Version</h2>
 <p>The files in this directory correspond to the current catalog release.</p>

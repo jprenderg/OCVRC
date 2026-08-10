@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://jprenderg.github.io/OCVRC/updating/">
+        <link rel="canonical" href="https://jprenderg.github.io/OCVRC/build/">
       
       
         <link rel="prev" href="../downloads/">
@@ -23,7 +23,7 @@
     
     
       
-        <title>Updating the Catalog - Open Cataclysmic Variable Radio Catalog (OCVRC)</title>
+        <title>Building a User Catalog - Open Cataclysmic Variable Radio Catalog (OCVRC)</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#updating-the-catalog" class="md-skip">
+        <a href="#building-a-user-defined-catalog" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Updating the Catalog
+              Building a User Catalog
             
           </span>
         </div>
@@ -293,7 +293,7 @@
   <span class="md-ellipsis">
     
   
-    Updating the Catalog
+    Building a User Catalog
   
 
     
@@ -311,7 +311,7 @@
   <span class="md-ellipsis">
     
   
-    Updating the Catalog
+    Building a User Catalog
   
 
     
@@ -497,9 +497,9 @@
 
 
 
-<h1 id="updating-the-catalog">Updating the Catalog</h1>
-<p>This page describes how to use the Open Cataclysmic Variable Radio Catalog (OCVRC) Update Utility to create a new source and its associated measurements to the catalog.</p>
-<p>The update utility <strong>never modifies the master database</strong>. Instead, all new records are written to an output database. Users should contact the authors if they wish to contribute to the master database or have questions about the database.</p>
+<h1 id="building-a-user-defined-catalog">Building a User Defined Catalog</h1>
+<p>This page describes how to use the Open Cataclysmic Variable Radio Catalog (OCVRC) Build Utility to build a new user catalog by adding sources and their associated measurements.</p>
+<p>The build utility <strong>never modifies the master database</strong>. Instead, all new records are written to an output database. Users should contact the authors if they wish to contribute to the master database or have questions about the database.</p>
 <hr />
 <h2 id="requirements">Requirements</h2>
 <p>Before running the update utility, ensure that you have:</p>
@@ -512,17 +512,16 @@
 <p>Install the required packages:</p>
 <pre><code class="language-bash">pip install -r requirements.txt
 </code></pre>
-<hr />
 <h2 id="opal-casda-login">OPAL / CASDA Login</h2>
 <p>Some measurements require downloading data from the CASDA archive.</p>
-<p>Before running the program, edit <code>config.py</code> and enter your OPAL username:</p>
+<p>Before running the program, edit <code>config.py</code> by entering your OPAL username:</p>
 <pre><code class="language-python">OPAL_USERNAME = &quot;your_email@example.com&quot;
 </code></pre>
 <p>When the program runs, you will be prompted to enter your OPAL password in the terminal or console.</p>
 <p>Your password is <strong>never stored</strong> by this project.</p>
 <hr />
 <h2 id="running-the-program">Running the Program</h2>
-<p>Open <code>update_database.py</code>.</p>
+<p>Open <code>build_database.py</code>.</p>
 <p>Near the beginning of the file is a section labeled <strong>User Inputs</strong>.</p>
 <p>Enter the following information:</p>
 <ul>
@@ -535,7 +534,7 @@
 <li>A user provided source and class name for use in the event that a SIMBAD match is not available</li>
 </ul>
 <p>Run the program:</p>
-<pre><code class="language-bash">python update_database.py
+<pre><code class="language-bash">python build_database.py
 </code></pre>
 <p>The program automatically:</p>
 <ul>
@@ -545,21 +544,18 @@
 <li>Creates records in <code>Measurement_Table</code></li>
 <li>Creates records in <code>Class_Table</code></li>
 <li>Creates records in <code>Period_Table</code></li>
-<li>Creates records in <code>Summary_Table</code></li>
 </ul>
-<p>The output database contains only the newly created record and is written to:</p>
-<pre><code class="language-text">output/VLASS_RACS_Updated.db
-</code></pre>
-<p>The master database is <strong>never modified</strong>.</p>
 <hr />
 <h2 id="output">Output</h2>
-<p>After the program finishes, the ouptut database is located at:</p>
-<pre><code class="language-text">output/VLASS_RACS_Updated.db
+<p>The output database contains only user created records and is written to:</p>
+<pre><code class="language-text">output/OCVRC_Build.db
 </code></pre>
-<p>This database contains only the newly added record and its associated measurements.</p>
-<p>The update Source Summary Table CSV file is located at:</p>
-<pre><code class="language-text">output/summary_table.csv
+<p>The master database is <strong>never modified</strong>.</p>
+<p>A Source Summary Table is located at:</p>
+<pre><code class="language-text">output/Summary_Table_Build.csv
 </code></pre>
+<p>This file contains data regarding primary sources only (i.e., radio-loud neighbors are excluded)</p>
+<p>The user can control whether the current version of <code>OCVRC_Build.db</code> and <code>summary_table_build.csv</code> are deleted before adding a new source or new source information is appended to those files. This is accomplished by setting <code>strt_fresh = True or False</code></p>
 <hr />
 <h2 id="casda-cache">CASDA Cache</h2>
 <p>Downloaded CASDA files are stored in:</p>
