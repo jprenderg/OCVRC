@@ -11,8 +11,9 @@ import astropy.units as u
 import pandas as pd
 import numpy as np
 
-
 def galex(source_id, ra_deg, dec_deg):
+    
+    print("\nStart galex\n")
 
     search_radius = 15 * u.arcsec
 

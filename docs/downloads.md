@@ -4,7 +4,7 @@ This directory contains the primary data products for the **OCVRC**.
 
 ## Files
 
-### `OcvcVlassRacs.sqlite`
+### `OCVRC_Build.db`
 
 The complete SQLite database containing the following tables:
 
@@ -21,17 +21,19 @@ This file is recommended for users who wish to perform SQL queries or make use o
 
 ---
 
-### `Summary_Table.csv`
+### `Summary_Table_Build.csv`
 
 A CSV version of the `Source Summary Table`.
 
-This file contains one row for each primary catalog source and is intended for users who require only the primary source catalog without the complete relational database.
+This file contains one row for each primary catalog source (i.e., radio-loud neighbors are excluded) and is intended for users who require only the primary source catalog without the complete relational database.
 
 ---
 
 ## Documentation
 
-Complete documentation, including descriptions of all database fields, download instructions, and update procedures, is available through the project's GitHub Pages documentation site.
+Complete documentation, including descriptions of all database fields, download instructions, and update procedures, is available through the project's GitHub Pages documentation site:
+
+`https://jprenderg.github.io/OCVRC/`
 
 ---
 

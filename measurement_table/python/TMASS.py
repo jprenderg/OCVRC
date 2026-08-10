@@ -13,6 +13,8 @@ import numpy as np
 
 
 def tmass(source_id, ra_raw, dec_raw):
+    
+    print("\nStart tmass\n")
 
     radius = 15 * u.arcsec
     
@@ -118,4 +120,4 @@ unique_id = 1
 ra = 261.62038
 dec = -39.71886
 
-temp = tmass(unique_id, ra, dec)
+# temp = tmass(unique_id, ra, dec)

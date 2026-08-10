@@ -10,7 +10,6 @@ from astroquery.simbad import Simbad
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 
-
 def name(df_source):
     """
     Create a name table from a source table.
@@ -25,6 +24,8 @@ def name(df_source):
         NAME
         DEFAULT_NAME
     """
+    
+    print("\nStart name\n")
 
     search_radius_arcsec = 15.0
     search_radius_deg = search_radius_arcsec / 3600.0

@@ -29,8 +29,8 @@ db_path = OUTPUT_DB
 # Read from master database
 # db_path = MASTER_DB
 
-ra = 304.39133
-dec = -3.66411
+ra = 245.4470133276900
+dec = -22.8862182469700
 
 search_radius_arcsec = 300.0
 

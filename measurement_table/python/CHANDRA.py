@@ -14,6 +14,8 @@ from io import BytesIO
 
 
 def chandra(source_id, ra_deg, dec_deg):
+    
+    print("\nStart chandra\n")
 
     search_radius_arcsec = 15
 

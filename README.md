@@ -6,7 +6,7 @@ This repository contains:
 
 - The OCVRC master database.
 - A CSV version of a Source Summary Table.
-- Python software for creating new source entries.
+- Python software for building a user-defined database.
 - Documentation describing the catalog and its database schema.
 
 ---
@@ -39,7 +39,7 @@ See the **Downloads** page in the documentation for the latest files.
 
 ## Updating the Catalog
 
-The repository includes a Python utility for creating new sources and their associated measurements.
+The repository includes a Python utility for building a new database with user-defined sources.
 
 The master database itself is maintained separately and cannot be updated directly by users.
 
@@ -58,12 +58,12 @@ OcvcVlassRacs/
 │
 ├── downloads/             Full database file and summary table
 │
-├── master/                 Master catalog database and source summary table
+├── master/                Master catalog database and source summary table
 │
-├── output/                Updated database created by the update utility
+├── output/                User created database and corresponding CSV source summary table.
 │
 ├── data/
-│   ├── lookup/            Lookup tables
+│   ├── lookup/            VLASS lookup tables
 │   └── cache/             CASDA download cache
 │
 ├── source_table/          Source table generation

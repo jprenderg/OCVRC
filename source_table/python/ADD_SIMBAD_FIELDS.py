@@ -23,6 +23,8 @@ def add_simbad_fields(df_source_interm):
 
     using the nearest SIMBAD source within search_radius_arcsec.
     """
+    
+    print("\nStart add_simbad_fields\n")
 
     # Create output columns
     new_cols = [

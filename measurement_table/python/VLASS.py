@@ -15,6 +15,7 @@ from astropy import wcs
 from config import VLASS1_LIST
 from config import VLASS23_LIST
 
+
 def vlass(epoch_code, source_id, ra_deg, dec_deg):
     """
     Measure VLASS flux/RMS for one source.
@@ -28,6 +29,8 @@ def vlass(epoch_code, source_id, ra_deg, dec_deg):
         MEASUREMENT
         ERROR
     """
+    
+    print("\nStart vlass\n")
 
     # ------------------------------------------------------------
     # Controls
@@ -343,4 +346,4 @@ ra_deg = 268.794667
 dec_deg = -30.175139
 epoch_code = 23
 
-temp = vlass(epoch_code, unique_id, ra_deg, dec_deg)
+# temp = vlass(epoch_code, unique_id, ra_deg, dec_deg)

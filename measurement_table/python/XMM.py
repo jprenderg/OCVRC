@@ -11,8 +11,9 @@ import astropy.units as u
 import pandas as pd
 
 
-
 def xmm(source_id, ra_deg, dec_deg):
+    
+    print("\nStart xmm\n")
 
     # ------------------------------------------------------------
     # Settings
@@ -158,5 +159,5 @@ def xmm(source_id, ra_deg, dec_deg):
 unique_id = 1
 ra_deg = 267.881
 dec_deg = -29.49896
-temp = xmm(unique_id, ra_deg, dec_deg)
+# temp = xmm(unique_id, ra_deg, dec_deg)
 

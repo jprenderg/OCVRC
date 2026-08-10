@@ -14,7 +14,7 @@ The catalog consists of the following principal tables:
 - **Class Table** – Cataclysmic variable classifications.
 - **Period Table** – Orbital and spin period information.
 
-It also includes a **Source Summary Table** CSV file. This file contains one row for each primary catalog source and is intended for users who require only the primary source catalog without the complete relational database.
+It also includes a **Source Summary Table** CSV file. This file contains rows for each primary catalog source (i.e., radio-loud neighbors are excluded) and is intended for users who require only a general source description without the complete relational database.
 
 ## Documentation
 

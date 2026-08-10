@@ -8,4 +8,4 @@ nav:
   - Home: index.md
   - Catalog Fields: fields.md
   - Downloads: downloads.md
-  - Updating the Catalog: updating.md
+  - Building a User Catalog: build.md

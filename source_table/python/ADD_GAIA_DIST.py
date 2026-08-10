@@ -17,6 +17,8 @@ logging.getLogger("astroquery").setLevel(logging.ERROR)
 
 
 def add_gaia_dist(df_source_interm):
+    
+    print("\nStart add_gaia_dist\n")
     """
     Adds DISTANCE and DISTANCE_ERROR in kpc using the nearest
     Gaia source within 2 arcseconds.

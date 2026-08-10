@@ -40,10 +40,10 @@ VLASS23_LIST = LOOKUP_DIR / "VLASS_2_3_img_list_10Aug25.txt"
 # ------------------------------------------------------------
 
 MASTER_DB = MASTER_DIR / "OCVRC_Master.db"
-MASTER_SUMMARY = MASTER_DIR / "summary_table.csv"
+MASTER_SUMMARY = MASTER_DIR / "Summary_Table_Master.csv"
 
-OUTPUT_DB = OUTPUT_DIR / "OCVRC_Update.db"
-OUTPUT_SUMMARY = OUTPUT_DIR / "summary_table.csv"
+OUTPUT_DB = OUTPUT_DIR / "OCVRC_Build.db"
+OUTPUT_SUMMARY = OUTPUT_DIR / "Summary_Table_Build.csv"
 
 # ------------------------------------------------------------
 # Table directories

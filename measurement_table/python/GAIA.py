@@ -15,6 +15,8 @@ import numpy as np
 
 
 def gaia(source_id, ra, dec):
+    
+    print("\nStart gaia\n")
 
     coord = SkyCoord(
         ra=ra * u.degree,

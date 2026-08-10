@@ -13,11 +13,14 @@ import numpy as np
 import warnings
 import pandas as pd
 
+
 # ------------------------------------------------------------
 # Input coordinates
 # ------------------------------------------------------------
 
 def rosat(source_id, ra_deg, dec_deg): 
+    
+    print("\nStart rosat\n")
 
     # ------------------------------------------------------------
     # Defaults
