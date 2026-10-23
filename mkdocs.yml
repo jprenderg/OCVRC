@@ -1,0 +1,17 @@
+site_name: OCVRC
+site_url: https://jprenderg.github.io/OCVRC/
+repo_url: https://github.com/jprenderg/OCVRC
+repo_name: jprenderg/OCVRC
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Input catalog: input-catalog.md
+  - Configuration: configuration.md
+  - Building a catalog: building-catalog.md
+  - Catalog Fields: fields.md
+  - Radio measurements: radio-measurements.md
+  - Additional surveys: surveys.md
+  - Validation: validation.md
+  - Limitations and release notes: limitations.md

@@ -1,0 +1,122 @@
+
+
+[PATHS]
+INPUT_CSV = input/sources.csv
+OUTPUT_DIR = output
+SOURCE_PKL = output/source.pkl
+IMAGE_OUTPUT_DIR = output/images
+# VLASS link lists are included in the GitHub repository.
+# Relative paths are resolved from the project root.
+VLASS1_LINKS = data/VLASS/VLASS1_img_list_10Aug25.txt
+VLASS23_LINKS = data/VLASS/VLASS_2_3_img_list_10Aug25.txt
+# RACS cutouts downloaded automatically through CSIRO CASDA.
+RACS_CACHE_DIR = output/images/racs_cache
+
+[SIMBAD]
+MATCH_RADIUS_ARCSEC = 2.0
+TIMEOUT_SECONDS = 120
+MAX_RETRIES = 3
+RETRY_DELAY_SECONDS = 3
+
+[PROCESSING]
+# Use TRUE only for local table-logic testing without network access.
+SKIP_SIMBAD = FALSE
+
+[IMAGE_RETRIEVAL]
+# Start with rows 0:10 to test without processing the full catalog.
+START_ROW = 0
+END_ROW = -1
+# Diagnostic plots are disabled in the production release.
+DISPLAY_INDEX = -1
+
+[DIAGNOSTICS]
+SHOW_PLOTS = FALSE
+
+[VLASS]
+BOX_SIZE = 11
+RA_LIMIT = 0.5
+DEC_LIMIT = 0.5
+
+[RACS]
+BOX_SIZE = 47
+USE_CUTOUT_CACHE = TRUE
+CUTOUT_RADIUS_ARCMIN = 2.0
+# Optional: OPAL email, or set CASDA_USERNAME environment variable.
+# Never store an OPAL password in this file.
+CASDA_USERNAME =
+
+[GAIA]
+MATCH_RADIUS_ARCSEC = 2.0
+START_ROW = 0
+END_ROW = -1
+SAVE_EVERY = 100
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[2MASS]
+MATCH_RADIUS_ARCSEC = 2.0
+START_ROW = 0
+END_ROW = -1
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[GALEX]
+MATCH_RADIUS_ARCSEC = 2.0
+START_ROW = 0
+END_ROW = -1
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[LOTSS]
+MATCH_RADIUS_ARCSEC = 2.0
+START_ROW = 0
+END_ROW = -1
+TIMEOUT_SECONDS = 60
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[ROSAT]
+MATCH_RADIUS_ARCSEC = 30
+START_ROW = 0
+END_ROW = -1
+TIMEOUT_SECONDS = 60
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[XMM]
+MATCH_RADIUS_ARCSEC = 5
+START_ROW = 0
+END_ROW = -1
+TIMEOUT_SECONDS = 60
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[Chandra]
+MATCH_RADIUS_ARCSEC = 2
+START_ROW = 0
+END_ROW = -1
+TIMEOUT_SECONDS = 60
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[eROSITA]
+MATCH_RADIUS_ARCSEC = 10
+START_ROW = 0
+END_ROW = -1
+TIMEOUT_SECONDS = 60
+MAX_RETRIES = 2
+RETRY_DELAY_SECONDS = 3
+
+[QUERY_MANAGEMENT]
+RESUME = TRUE
+SAVE_EVERY = 10
+CONSECUTIVE_FAILURE_LIMIT = 5
+
+# Existing survey sections continue to control:
+# MAX_RETRIES = 2
+# RETRY_DELAY_SECONDS = 3
+# START_ROW = 0
+# END_ROW = -1
+
+[PIPELINE]
+VALIDATION = TRUE
