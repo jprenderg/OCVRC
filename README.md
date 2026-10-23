@@ -11,7 +11,7 @@ python -m pip install -r requirements.txt
 python Run_OCVRC.py
 ```
 
-Update `config.txt` and supply your own `input/sources.csv` first. The SQLite output is `output/final/OCVRC.db`. To validate existing outputs without querying services: `python validation/Run_Validation.py`.
+Update `config.txt` and supply your own `input/example_sources.csv` first. The SQLite output is `output/final/OCVRC.db`. To validate existing outputs without querying services: `python validation/Run_Validation.py`.
 
 Full installation, fields, validation and scientific caveats are in the bundled MkDocs sources in `docs/`. Build locally with `python -m pip install -r requirements-docs.txt` and `mkdocs serve`.
 
