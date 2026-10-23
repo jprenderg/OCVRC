@@ -1,7 +1,7 @@
 
 
 [PATHS]
-INPUT_CSV = input/sources.csv
+INPUT_CSV = input/example_sources.csv
 OUTPUT_DIR = output
 SOURCE_PKL = output/source.pkl
 IMAGE_OUTPUT_DIR = output/images
